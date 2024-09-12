@@ -1,0 +1,54 @@
+.btn:hover + .arrow-btn {
+  transform: translateX(-200px) rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow-btn {
+  transition: transform 0.5s ease-in-out;
+}
+.btn:hover {
+  transform: translateX(10px);
+  transition: transform 0.3s ease-in-out;
+}
+.btn {
+  transition: transform 0.5s ease-in-out;
+}
+.fading {
+  animation: fadeUp 1s ease-in-out forwards;
+  opacity: 0;
+}
+.fading-txt {
+  animation: fadeUp 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+.fading-txt-a {
+  animation: fadeUp 1s ease-in-out forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+@keyframes fadeUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-grow{
+    animation: grow 1s ease-in-out forwards;
+}
+
+@keyframes grow{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
